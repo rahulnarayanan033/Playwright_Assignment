@@ -1,0 +1,9 @@
+{
+  "lblAdmin": "//span[text()='Admin']/parent::a",
+  "txtUserName": "//*[text()=\"Username\"]/parent::div/following-sibling::div/input",
+  "btnSearch": "//*[@class=\"oxd-form-actions\"]/button[2]",
+  "lblSystemUser": "//*[text()='System Users']",
+  "lblUserName": "//*[@id='app']/descendant::div[text()='FMLName']",
+  "btnEdit": "//*[@id='app']/descendant::div[text()='FMLName']/parent::div/following-sibling::div/div/button/i[contains(@class,'bi-pencil')]",
+  "lblEditUser": "//*[text()=\"Edit User\"]"
+}

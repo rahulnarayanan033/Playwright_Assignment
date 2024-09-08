@@ -1,0 +1,6 @@
+{
+  "txtUserName": "//*[@name='username']",
+  "txtPassword": "//*[@name='password']",
+  "btnLogin": "//*[@id='app']/descendant::button[@type='submit']",
+  "profilePicture": "//*[@class=\"oxd-topbar\"]/descendant::img[@alt=\"profile picture\"]"
+}

@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type":"array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "deleted": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "employee": {
+            "type": "object",
+            "properties": {
+              "empNumber": {
+                "type": "integer"
+              },
+              "employeeId": {
+                "type": "string"
+              },
+              "firstName": {
+                "type": "string"
+              },
+              "middleName": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
+              },
+              "terminationId": {
+                "type": "null"
+              }
+            },
+            "required": ["empNumber","employeeId","firstName","middleName","lastName","terminationId"]
+          },
+          "userRole": {
+            "type": "object",
+            "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "displayName": {
+                  "type": "string"
+                }
+            },
+            "required": ["id","name","displayName"]
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer"
+        }
+      },
+      "required": ["total"]
+    },
+    "rels": {
+      "type": "array"
+    }
+  }
+
+}

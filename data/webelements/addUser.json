@@ -1,0 +1,19 @@
+{
+    "lblAdmin": "//span[text()='Admin']/parent::a",
+    "btnAdd": "//*[contains(@class,'bi-plus')]/parent::button",
+    "lblAddUser": "//*[text()=\"Add User\"]",
+    "cboEmployeeName": "//*[contains(text(),'Employee Name')]/parent::div/following-sibling::div/descendant::input",
+    "lblEmployeeName": "(//*[@role=\"listbox\"]/div/span[contains(text(),\"sww  test\")])[1]",
+    "txtUserName": "//*[contains(text(),'Username')]/parent::div/following-sibling::div/descendant::input",
+    "cboUserRole": "//*[@id=\"app\"]/descendant::form/descendant::div[6]",
+    "lblUserRole": "//*[@role=\"listbox\"]/div/span[text()=\"Admin\"]",
+    "cboStatus": "//*[@id=\"app\"]/descendant::form/descendant::div[24]",
+    "lblStatus": "//*[@role=\"listbox\"]/div/span[text()=\"Enabled\"]",
+    "txtPassword": "//*[text()=\"Password\"]/parent::div/following-sibling::div/input",
+    "txtConfirmPassword": "//*[text()=\"Confirm Password\"]/parent::div/following-sibling::div/input",
+    "btnSave": "(//button[contains(text(),'')])[5]",
+    "lblSystemUser": "//*[text()='System Users']",
+    "lblAddUser": "//*[text()=\"Add User\"]",
+    "txtEmployeeName": "//*[contains(text(),'Employee Name')]/parent::div/following-sibling::div/descendant::input",
+    "lblEmployeeName": "(//*[@role=\"listbox\"]/div/span[contains(text(),\"sww  test\")])[1]"
+}
