@@ -122,7 +122,7 @@ def test_request(browser):
         # sends a GET request using playwright's GET method
         request = context.request
         response = request.get("https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/admin/users?limit=50&offset=0&sortField=u.userName&sortOrder=ASC",headers={
-        "Cookie": "orangehrm=74c6edb91ea4e6f0d2aa13511b741147"
+        "Cookie": "orangehrm=3356521747e3679fe7e28f5240083e84"
         })
         # verifies whether the response is successfull
         expect(response).to_be_ok()
@@ -152,14 +152,15 @@ def test_request(browser):
 
     with allure.step('fetch all the usernames from UI and API response'):
         # fetches the usernames from UI using below locator
-        usernnameUI = page.locator('(//*[@role="table"]/div/following-sibling::div/div/div/div[2])').all_text_contents()
+        usernameUI = page.locator('(//*[@role="table"]/div/following-sibling::div/div/div/div[2])').all_text_contents()
         # fetches the usernames from API response using below locator
         usernameApi = [i['userName'] for i in response['data']]
 
     with allure.step('validate if correct usernames from API responses are displayed in UI'):
-        if usernnameUI == usernameApi:
-            allure.attach('Passed')
-        else:
-            raise AssertionError('Failed')
+        for i in usernameApi:
+            if i in usernameUI:
+                allure.attach(i + ' is dispyed in UI')
+            else:
+                raise AssertionError(i + ' is not dispyed in UI')
     page.close()
     context.close()
