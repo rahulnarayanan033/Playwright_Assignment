@@ -26,3 +26,4 @@ How to set up
 7. Type below commands in terminal for execution
    1. Navigate to tests folder: cd tests 
    2. Then type: pytest -v -s --alluredir=report test_hr.py --headed
+   3. run allure serve report command to generate allure report
